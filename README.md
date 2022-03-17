@@ -1,20 +1,23 @@
-# v2ray_cli
-V2ray Subscription Command-Line Interface for Linux without GUI
+# depend
 
-# How to use
-0. Install [python3](https://pythonguidecn.readthedocs.io/zh/latest/starting/install3/linux.html)
-1. Install [v2ray](https://www.v2ray.com/chapter_00/install.html)
-2. git clone https://github.com/Libunko/v2ray_cli.git
-3. cd v2ray_cli && ./v2ray_cli.py
+ * `python3`
+ * `v2ray-core` [v2ray-core](https://github.com/v2fly/v2ray-core)
 
-# Done
-- Subscribe vmess
-- Connection subscribe node
+# install v2ray-core
 
-# Todo
-- Fix bugs
-- Support modify listen port
-- Fix log level
-- Routing
-- More protocol (SSR、SS .etc)
-- ...
+download latest `v2ray-core` package
+
+```
+cd v2ray
+cp -f v2ray ~/.local/bin
+cp -f geoip.dat ~/.local/bin
+cp -f geosite.dat ~/.local/bin
+cp -f config.json ~/.local/etc
+```
+
+# usage
+
+```
+./v2ray_cli.py
+```
+

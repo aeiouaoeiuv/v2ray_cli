@@ -51,12 +51,24 @@
     },
     "inbounds": [
         {
-            "port": 10809,
-            "protocol": "http",
+            "port": 1080,
+
+            "listen": "127.0.0.1",
+
+            "tag": "socks-inbound",
+
+            "protocol": "socks",
+
             "settings": {
-                "userLevel": 8
+                "auth": "noauth",
+                "udp": false,
+                "ip": "127.0.0.1"
             },
-            "tag": "http"
+
+            "sniffing": {
+                "enabled": true,
+                "destOverride": ["http", "tls"]
+            }
         }
     ],
     "outbounds": [

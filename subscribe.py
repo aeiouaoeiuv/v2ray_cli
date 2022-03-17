@@ -117,4 +117,4 @@ class Subscribe(object):
             return
 
         os.system("killall v2ray")
-        os.system("/usr/bin/v2ray/v2ray ./config.json &")
+        os.system("${HOME}/.local/bin/v2ray ${HOME}/.local/etc/config.json &")
